@@ -1,0 +1,302 @@
+.App {
+  margin-top: 3%;
+  min-width: 355px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+.text-left {
+  text-align: left !important;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  width: inherit;
+  border-radius: 2px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  width: inherit;
+  font-size: small;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab .active {
+  background-color: #ccc;
+}
+
+.actived a {
+  color: green;
+}
+.actived a:hover {
+  font-weight: bold;
+}
+
+.deactivated a {
+  color: red;
+}
+.deactivated a:hover {
+  font-weight: bold;
+}
+
+.available {
+  color: green;
+}
+.disable {
+  color: red;
+  font-weight: bold;
+}
+.intraining {
+  color: blue;
+  font-weight: bold;
+}
+.vacation {
+  font-weight: bold;
+}
+
+.main {
+  padding: 20px;
+  background-color: lavenderblush;
+}
+.top-container {
+  background-color: white;
+  border-radius: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.top-tab-container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.bottom-tab-container {
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Tabs {
+  position: relative;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+}
+.Tab {
+  font-family: 'Roboto Slab';
+}
+.Tabs__tab {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+
+.Tab > a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #666;
+  transition: color 0.15s;
+}
+.Tabs__tab:nth-child(2).active ~ .Tabs__presentation-slider {
+  left: calc(33.333% * 1);
+}
+.Tabs__tab:nth-child(3).active ~ .Tabs__presentation-slider {
+  left: calc(33.333% * 2);
+}
+.Tabs__presentation-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33.333%;
+  height: 2px;
+  background-color: #ef9393;
+  transition: left 0.25s;
+}
+.Tabs:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  width: 100%;
+}
+
+.border-radius {
+  border-radius: 5px;
+}
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.bottm-pagination {
+  padding: 10px;
+}
+.next {
+  background-color: rgb(230, 230, 230);
+  float: right;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.previous {
+  background-color: rgb(230, 230, 230);
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.contry-name {
+  display: inline;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.img-custom {
+  height: 35px;
+  border-radius: 11px;
+}
+
+.card-header:first-child {
+  border-radius: 0;
+}
+
+.card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+  max-width: none;
+  display: block;
+  word-wrap: break-word;
+  background-color: inherit;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0px;
+  height: 250px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  border-bottom: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(245, 245, 245),
+    rgb(230, 230, 230),
+    rgb(245, 245, 245)
+  );
+}
+
+.card-title-custom {
+  height: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: inherit;
+  font-weight: 500;
+  margin-top: 0;
+  color: inherit;
+  width: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.costum-btn {
+  border: none;
+  width: calc(100% - 140px);
+  border-radius: 20px;
+  background-color: beige;
+}
+.right-arrow-icon {
+  float: right;
+  display: inline-flex;
+  cursor: pointer;
+}
+@media (max-width: 550px) {
+  .main {
+    padding: 13px;
+    background-color: lavenderblush;
+  }
+  .hading {
+    font-size: 1.5rem;
+  }
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    width: inherit;
+    outline: none;
+    font-size: x-small;
+    cursor: pointer;
+    padding: 8px 0px;
+    transition: 0.3s;
+  }
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 1px;
+    display: flex;
+    width: inherit;
+  }
+  .top-container {
+    background-color: white;
+    border-radius: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .top-tab-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .costum-btn {
+    border: none;
+    width: calc(100%);
+    border-radius: 20px;
+    background-color: beige;
+  }
+  .card-header {
+    padding: 0.35rem 0.25rem;
+  }
+  .bottom-tab-container {
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
